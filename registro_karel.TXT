@@ -1,0 +1,12 @@
+class program {
+
+program() {
+    while(frontIsClear){
+        putbeeper();
+        move();
+    }
+    putbeeper();
+    turnoff();
+}
+
+}
