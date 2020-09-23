@@ -1,0 +1,65 @@
+class program {
+
+program() {
+    while(frontIsClear){
+        while(frontIsClear){
+            move();
+            if(nextToABeeper){
+                pickbeeper();
+                if(nextToABeeper){
+                    pickbeeper();
+                    turnleft();
+                    turnleft();
+                    while(frontIsClear){
+                        move();
+                    }
+                    turnleft();
+                    while(frontIsClear){
+                        move();
+                    }
+                    putbeeper();
+                    turnleft();
+                    turnleft();
+                    while(frontIsClear){
+                        move();
+                    }
+                    turnleft();
+                    turnleft();
+                    turnleft();
+                }
+                else {
+                    turnleft();
+                    turnleft();
+                    while(frontIsClear){
+                        move();
+                    }
+                    turnleft();
+                    turnleft();
+                    turnleft();
+                    while(frontIsClear){
+                        move();
+                    }
+                    putbeeper();
+                    turnleft();
+                    turnleft();
+                    turnleft();
+                }
+            }
+        }
+        turnleft();
+        turnleft();
+        while(frontIsClear){
+            move();
+        }
+        turnleft();
+        if(frontIsClear){
+            move();
+        }
+        else {
+            turnoff();
+        }
+        turnleft();
+    }
+}
+
+}
