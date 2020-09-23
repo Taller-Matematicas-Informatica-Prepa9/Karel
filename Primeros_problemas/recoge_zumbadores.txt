@@ -1,0 +1,38 @@
+class program {
+
+program() {
+    while(facingNorth){
+        while(frontIsClear){
+            while(nextToABeeper){
+                pickbeeper();
+            }
+            move();
+        }
+        while(nextToABeeper){
+            pickbeeper();
+        }
+        turnleft();
+        turnleft();
+        while(frontIsClear){
+            move();
+        }
+        turnleft();
+        if(frontIsClear){
+            move();
+        }
+        else {
+            turnleft();
+            turnleft();
+            while(frontIsClear){
+                move();
+            }
+            while(anyBeepersInBeeperBag){
+                putbeeper();
+            }
+            turnoff();
+        }
+        turnleft();
+    }
+}
+
+}

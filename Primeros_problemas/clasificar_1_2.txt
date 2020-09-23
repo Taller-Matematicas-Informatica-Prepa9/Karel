@@ -1,0 +1,22 @@
+class program {
+
+program() {
+    while(notFacingEast){
+        turnleft();
+    }
+    if(nextToABeeper){
+        pickbeeper();
+        if(nextToABeeper){
+            pickbeeper();
+            move();
+            move();
+            putbeeper();
+        }
+        else {
+            move();
+            putbeeper();
+        }
+    }
+}
+
+}
