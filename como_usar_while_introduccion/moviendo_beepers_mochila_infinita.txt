@@ -1,0 +1,24 @@
+class program {
+
+program () {
+    turnleft();
+    while(!nextToABeeper&&frontIsClear)move();
+    turnleft();
+    turnleft();
+    while(nextToABeeper()){
+        pickbeeper();
+        while(frontIsClear)move();
+        turnleft();
+        while(frontIsClear)move();
+        putbeeper();
+        turnleft();
+        turnleft();
+        while(frontIsClear)move();
+        iterate(3)turnleft();
+        while(!nextToABeeper&&frontIsClear)move();
+        turnleft();
+        turnleft();
+    }
+}
+
+}
